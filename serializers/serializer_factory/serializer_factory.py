@@ -1,4 +1,6 @@
 from serializers.json.json_serializer import JsonSerializer
+from serializers.yaml.yaml_serializer import YamlSerializer
+from serializers.toml.toml_serializer import TomlSerializer
 from serializers.pickle.pickle_serializer import PickleSerializer
 from serializers.abstract_serializer.abstract_serializer import Serializer
 
@@ -8,6 +10,8 @@ class SerializerFactory:
     def __init__(self):
         self.serializers = {}
         self.register_format("json", JsonSerializer)
+        self.register_format("yml", YamlSerializer)
+        self.register_format("toml", TomlSerializer)
         self.register_format("pickle", PickleSerializer)
 
     def register_format(self, form: str, serializer: Serializer.__subclasses__()):
