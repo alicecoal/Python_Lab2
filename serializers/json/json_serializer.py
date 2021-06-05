@@ -1,10 +1,9 @@
+from serializers.abstract_serializer.abstract_serializer import Serializer
+from addition.additionfunc import extract_global_ops
+from types import FunctionType, CodeType, LambdaType
 import codecs
 import inspect
 import re
-from serializers.abstract_serializer.abstract_serializer import Serializer
-from converter.converter import extract_global_ops
-from types import FunctionType, CodeType, LambdaType
-
 
 class JsonSerializer(Serializer):
     def dumps(self, obj: object) -> str:

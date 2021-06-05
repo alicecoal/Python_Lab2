@@ -1,3 +1,4 @@
+#abstract serializer
 from abc import abstractmethod
 
 

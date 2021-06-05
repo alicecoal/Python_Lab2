@@ -1,10 +1,8 @@
-#!/usr/bin/env python3
-import argparse
 import configparser
-from log.logger import get_logger
+from logger.logger import get_logger
 from serializers.serializer_factory.serializer_factory import SerializerFactory
 from serializers.json.json_serializer import JsonValidationError
-import os
+import os, argparse
 
 logger = get_logger(__name__)
 

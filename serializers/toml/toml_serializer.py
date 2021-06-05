@@ -1,7 +1,6 @@
-import pytomlpp
 from serializers.abstract_serializer.abstract_serializer import Serializer
-from converter.converter import to_dict, from_dict
-
+from addition.additionfunc import to_dict, from_dict
+import pytomlpp
 
 class TomlSerializer(Serializer):
 

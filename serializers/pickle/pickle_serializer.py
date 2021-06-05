@@ -1,7 +1,6 @@
-import pickle
 from serializers.abstract_serializer.abstract_serializer import Serializer
-from converter.converter import from_dict, to_dict
-
+from addition.additionfunc import from_dict, to_dict
+import pickle
 
 class PickleSerializer(Serializer):
 
